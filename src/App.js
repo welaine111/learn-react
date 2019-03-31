@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import Contacts from "./components/contacts/Contacts";
 import Header from "./components/layout/Header";
@@ -27,7 +27,6 @@ class App extends Component {
                 <Route exact path="/contact/add" component={AddContact} />
                 <Route exact path="/contact/edit/:id" component={EditContact} />
                 <Route exact path="/about/:id" component={About} />
-
                 <Route exact path="/test" component={Test} />
 
                 <Route component={NotFound} />
